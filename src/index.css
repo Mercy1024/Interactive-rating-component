@@ -146,7 +146,14 @@
 
 .ratings .rating_click {
   background-color: var(--Orange);
-  color: black;
+  color: var(--VeryDarkBlue);
+  transition: 0.5s;
+}
+
+.ratings .rating_click:hover {
+  background-color: var(--Orange);
+  color: var(--VeryDarkBlue);
+  transition: 0.5s;
 }
 
 .ratings .rating_unclick {
