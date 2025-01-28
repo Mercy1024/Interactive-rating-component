@@ -124,11 +124,11 @@
   font-size: var(--FF);
 }
 
-.ratings span:hover {
+/* .ratings span:hover {
   background-color: white;
   color: var(--VeryDarkBlue);
   transition: 0.5s;
-}
+} */
 
 .submit {
   padding: 0.6rem 1rem;
