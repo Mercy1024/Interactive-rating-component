@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import starIcon from "./images/icon-star.svg";
+import thankYouIllustration from "./images/illustration-thank-you.svg";
 
 export default function App() {
   const [rating, setRating] = useState(0);
@@ -50,13 +52,11 @@ function Main() {
 function Star() {
   return (
     <div className="star">
-      <img
-        src="../interactive-rating-component-main/images/icon-star.svg"
-        alt="star"
-      />
+      <img src={starIcon} alt="star" loading="lazy" />
     </div>
   );
 }
+
 function Interaction({ rating, handleRating }) {
   return (
     <div className="ratings">
@@ -113,10 +113,7 @@ function Submit({ rating, thankYouState, setThankYouState }) {
 function ThankYouComponent({ rating }) {
   return (
     <div className="container2">
-      <img
-        src="../interactive-rating-component-main/images/illustration-thank-you.svg"
-        alt="illustration"
-      />
+      <img src={thankYouIllustration} alt="illustration" loading="lazy" />
       <p className="selection">You selected {rating} out of 5</p>
       <div className="content">
         <h1>Thank you!</h1>
